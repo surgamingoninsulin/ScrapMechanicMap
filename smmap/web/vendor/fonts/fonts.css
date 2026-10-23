@@ -1,0 +1,35 @@
+/* The two faces the Scoutbot pages use, served from this folder so the map
+   looks the same with no internet. Latin subset only: the UI is English and
+   place names come from the game's own ASCII tile names. */
+
+@font-face {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(./russo-one-latin-400-normal.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(./nunito-latin-400-normal.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(./nunito-latin-700-normal.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: url(./nunito-latin-800-normal.woff2) format('woff2');
+}

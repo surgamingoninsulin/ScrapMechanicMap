@@ -1,5 +1,26 @@
 # Changelog
 
+## Unreleased: Scoutbot
+
+Scoutbot is the live 3D map: your world on a second monitor, tablet or phone,
+with a drone where you are standing. It is built in phases; see
+`plan_scoutbot.md`. Nothing below changes what 2.2 renders.
+
+**Phase 0, groundwork.**
+
+- `smmap/live/shell.py`: the one place Scoutbot starts another program. On
+  Windows it goes through `C:\Windows\System32\cmd.exe` by full path and
+  opens pages and Steam by URL, so no "pick an app" dialog can appear. URLs and
+  batch paths that cmd.exe could misread (quotes, `%`, `&`, `|`, `^`) are
+  refused instead of quoted.
+- Three.js r128, OrbitControls, Russo One and Nunito are vendored under
+  `smmap/web/vendor/` with their licenses and pinned hashes, so the map needs no
+  internet.
+- `tests/`, run with `python -m unittest discover -s tests -t .`, and
+  `tools/screenshot.py`, which shoots a page at 1920x1080 and 390x844 and fails
+  on any page error.
+- `CLAUDE.md` with the working rules.
+
 ## 2.2
 
 **What the save holds.** A map used to be the world as the generator made it.
