@@ -73,7 +73,9 @@ def shoot(url, name, phase, wait_ms, ready, chromium):
                 page.wait_for_timeout(wait_ms)
                 path = os.path.join(OUT, "phase-%s-%s-%s.png"
                                     % (phase, name, view))
-                page.screenshot(path=path)
+                # A full world on SwiftShader can take a minute per frame, and
+                # a screenshot waits for the next one.
+                page.screenshot(path=path, timeout=300000)
                 written.append(os.path.normpath(path))
                 context.close()
         finally:
