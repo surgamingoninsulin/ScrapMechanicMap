@@ -8,3 +8,8 @@
 # Binary, so git never tries to fix the line endings inside them.
 *.png binary
 *.ico binary
+
+# Vendored web files are byte-for-byte copies with pinned hashes
+# (smmap/web/vendor/VENDOR.md). A Windows checkout with core.autocrlf would
+# otherwise turn their LF into CRLF and every hash would fail.
+smmap/web/vendor/** -text
