@@ -1,0 +1,14 @@
+17:08:45 (1/0) [Main:29992] [Default] Initialized Logger
+17:08:45 (1/0) [Main:29992] [Default] Game version 1.0.1.869
+17:12:12 (1/8162) [UnnamedThread:26016] [Lua] UpgradeCellData - version: 2
+17:12:30 (900/8200) [Logic Task:18492] [Lua] [SMMAP]{"x":-1024.500,"y":2048.250,"z":31.125,"yaw":1.5708,"world":1,"t":8200}
+17:12:30 (904/8204) [Logic Task:13240] [Lua] [SMMAP]{"x":-1024.000,"y":2048.750,"z":31.125,"yaw":1.5708,"world":1,"t":8204}
+17:12:30 (908/8208) [Main:29992] [SMMAP]{"x":-1023.500,"y":2049.250,"z":31.200,"yaw":1.6000,"world":1,"t":8208}
+17:12:31 (909/8209) [Main:29992] WARNING: TextureUtil.cpp:795 Image: '$SURVIVAL_DATA/x.tga' was loaded as: '256x-1'
+17:12:31 (912/8212) [Logic Task:18492] [Lua] [SMMAP]{"x":-1023.000,"y":2049.750,"z":31.250,"yaw":-3.1416,"world":1,"t":8212}
+17:12:31 (913/8213) [Logic Task:18492] [Lua] [SMMAP]{"x":"nope","y":0,"z":0,"yaw":0,"world":1,"t":8213}
+17:12:31 (914/8214) [Logic Task:18492] [Lua] [SMMAP]{"x":1,"y":2
+17:12:31 (915/8215) [Logic Task:18492] [Lua] [SMMAP][1,2,3]
+17:12:31 (916/8216) [Logic Task:18492] [Lua] ----- Lua Error Traceback -----
+17:12:32 (916/8216) [Logic Task:18492] WARNING: [SMMAP-ERROR]...ScoutbotReporter:12: attempt to index a nil value
+17:12:32 (920/8220) [Logic Task:18492] [Lua] [SMMAP]{"x":0,"y":0,"z":-12.5,"yaw":0,"world":3,"t":8220}

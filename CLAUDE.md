@@ -45,6 +45,8 @@ in `plan_scoutbot.md`; read it before starting a phase.
   line here saying why:
   - `playwright` (development only, `tools/screenshot.py`): phase screenshots
     of WebGL pages need a real browser. Nothing the user runs imports it.
+  - `lupa` (development only, `tests/test_reporter.py`): runs the game patch's
+    Lua under LuaJIT, the game's own runtime. Skipped when missing.
 - Web libraries are vendored in `smmap/web/vendor/` (see `VENDOR.md` there):
   no CDN, and it works offline.
 - The server binds `127.0.0.1` by default. LAN and public are opt-in.

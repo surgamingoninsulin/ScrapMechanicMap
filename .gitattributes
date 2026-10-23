@@ -13,3 +13,6 @@
 # (smmap/web/vendor/VENDOR.md). A Windows checkout with core.autocrlf would
 # otherwise turn their LF into CRLF and every hash would fail.
 smmap/web/vendor/** -text
+
+# Log fixtures mix CRLF and LF on purpose; git must not normalise them.
+tests/fixtures/*.log -text
